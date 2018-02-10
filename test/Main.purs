@@ -50,7 +50,7 @@ main :: forall t.
 main = runTest do
   suite "soundfonts" do
     gleitzSuite
-    playableSuite
+    -- playableSuite
 
 generateMelody :: Melody
 generateMelody =
