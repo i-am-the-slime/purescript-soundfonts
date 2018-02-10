@@ -18,6 +18,7 @@ import Test.Unit.Assert as Assert
 import Test.Unit.Console (TESTOUTPUT)
 import Test.Unit.Main (runTest)
 
+
 gleitzSuite :: forall t. Free (TestF t) Unit
 gleitzSuite =
   suite "gleitz" do
@@ -50,7 +51,7 @@ main :: forall t.
 main = runTest do
   suite "soundfonts" do
     gleitzSuite
-    -- playableSuite
+    playableSuite
 
 generateMelody :: Melody
 generateMelody =
